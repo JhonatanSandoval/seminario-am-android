@@ -1,20 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
     tools:context="com.academiamoviles.seminario.MensajesActivity">
 
-
-    <EditText
-        android:id="@+id/tvNombres"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:hint="@string/ingrese_nombre"/>
+        android:layout_height="wrap_content">
 
+        <EditText
+            android:id="@+id/tvNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnGrabar"
+            android:layout_toStartOf="@+id/btnGrabar"
+            android:hint="@string/ingrese_nombre"
+            android:padding="10dp"/>
 
+        <Button
+            android:id="@+id/btnGrabar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/grabar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rlBottom"/>
+
+        <RelativeLayout
+            android:id="@+id/rlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:id="@+id/tvMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btnEnviar"
+                android:layout_toStartOf="@+id/btnEnviar"
+                android:hint="@string/ingrese_mensaje"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/enviar"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 </LinearLayout>

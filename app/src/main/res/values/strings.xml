@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Seminario</string>
     <string name="ingrese_nombre">Ingrese su nombre</string>
+    <string name="grabar">Grabar</string>
+    <string name="ingrese_mensaje">Ingrese su mensaje</string>
+    <string name="enviar">Enviar</string>
 </resources>
