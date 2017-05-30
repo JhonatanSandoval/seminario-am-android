@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/tvNombres"
+            android:id="@+id/etNombres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@+id/btnGrabar"
@@ -48,7 +48,7 @@
             android:layout_alignParentBottom="true">
 
             <EditText
-                android:id="@+id/tvMensaje"
+                android:id="@+id/etMensaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/btnEnviar"
