@@ -1,5 +1,6 @@
 package com.academiamoviles.seminario;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,8 @@ import android.widget.EditText;
 
 import com.academiamoviles.seminario.adapter.MensajesAdapter;
 import com.academiamoviles.seminario.model.MensajeModel;
+import com.academiamoviles.seminario.services.GeolocationService;
+import com.academiamoviles.seminario.services.SocketService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +30,14 @@ public class MensajesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mensajes);
+
+        // iniciar el servicio
+        Intent servicioIntent = new Intent(MensajesActivity.this, GeolocationService.class);
+        startService(servicioIntent);
+
+
+        Intent servicioSocket = new Intent(MensajesActivity.this, SocketService.class);
+        startService(servicioSocket);
 
         initViews();
         setupRecyclerView();

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "509658836174",
+    "firebase_url": "https://seminarioandroid-am.firebaseio.com",
+    "project_id": "seminarioandroid-am",
+    "storage_bucket": "seminarioandroid-am.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509658836174:android:38020c3be0a56b0f",
+        "android_client_info": {
+          "package_name": "com.academiamoviles.seminario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509658836174-1m0dvlra9r353bgmjuiq06dhobj7aqcq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.academiamoviles.seminario",
+            "certificate_hash": "bbe9b669dcf267ac5e4ded37b9f42828423d5bd6"
+          }
+        },
+        {
+          "client_id": "509658836174-1elf8agk9mng69184u6be29vglc88aed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkiW07I8SsEY6j12kFa3OiTMQ5Eakm4ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509658836174-1elf8agk9mng69184u6be29vglc88aed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
